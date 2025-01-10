@@ -34,7 +34,7 @@
     --small-red: #f14248ad;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
     /* .banner-img{
         display: none;
     } */
