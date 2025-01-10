@@ -434,13 +434,13 @@ footer .social-icon ul li i:hover {
 }
 
 .banner-img {
-    height: 33rem;
+    /* height: 30rem; */
     background: transparent;
 }
 
 .banner-img .img {
     border-radius: 100%;
-    width: 95%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     animation: BanIm 3s ease infinite;
@@ -508,6 +508,10 @@ footer .social-icon ul li i:hover {
     display: flex;
     align-items: center;
     gap: 2.5rem;
+
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem; */
 }
 
 .about-text {

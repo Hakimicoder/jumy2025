@@ -33,3 +33,13 @@
     --red: #F14248;
     --small-red: #f14248ad;
 }
+
+@media screen and (min-width: 1000px) {
+    /* .banner-img{
+        display: none;
+    } */
+
+    .banner h2 {
+        font-size: 2.2rem;
+    }
+}
