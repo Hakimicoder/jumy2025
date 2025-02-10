@@ -46,7 +46,10 @@ html, body {
     cursor: url('../img/cursor.png'), auto;
 }
 
-main {
+/* main {
+    overflow-x: hidden;
+} */
+section {
     overflow-x: hidden;
 }
 
@@ -599,13 +602,14 @@ footer .social-icon ul li i:hover {
 .skills-grid {
     margin-top: 2.5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1.5rem;
 }
 
 .skills-grid .cart {
     display: flex;
     align-items: center;
+    padding: 1.5rem .8rem;
     gap: 1rem;
 }
 
@@ -617,14 +621,13 @@ footer .social-icon ul li i:hover {
 .skills .skills-span {
     text-transform: uppercase;
     font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    text-align: center;
+    width: auto;
 }
 
 .skills .skills-span b {
     color: var(--red);
+    display: none;
 }
 
 .skills-grid .cart:hover span {

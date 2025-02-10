@@ -1,3 +1,14 @@
+// AUTHOR Jumael Kamga & EmailJS.com 
+// Initialisation EmailJS suivi de mon ID
+//  Author : Jumael Kamga 
+//  Type : Personal Portfolio 
+//  Date : Tuesday 24 décembre 2024, 17:03:19
+//  Tools : Html, Css, Tailwind Css, Javsacript
+    // (Css Animation, ScrollyJS, Email.JS) 
+//  Version : 1.0
+
+
+
 var typingText = document.getElementById('oneb');
 var myTab = ["Jumael Kamga.", "HakimiCoder."];
 var arrayIndex = 1;
@@ -18,33 +29,3 @@ function textReplace() {
 }
 
 textReplace();
-
-
-
-
-
-
-
-
-// let type = document.getElementById("oneb");
-// let type2 = document.getElementById("twob");
-
-// // Show jumael kamga
-// function showJumy() {
-//     type.style.display = "block";
-//     setInterval(() => {
-//         type.style.display = "none";
-//     }, 3000);
-// }
-
-// showJumy();
-
-// // Show hakimicoder
-// function showHakimi() {
-//     type2.style.display = "block";
-//     setInterval(() => {
-//         type2.style.display = "none";
-//     }, 3000);
-// }
-
-// showHakimi();

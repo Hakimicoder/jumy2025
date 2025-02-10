@@ -74,13 +74,17 @@
 /* Banner title animation */
 
 @keyframes BanIm {
+    0% {
+        transform: translate(0, 0rem);
+        transition: .3s ease;
+    }
     50% {
-        transform: translate(0, -.5rem);
+        transform: translate(0, .5rem);
         transition: .3s ease;
         border: .6rem solid var(--red);
     }
     100% {
-        transform: translate(0, .5rem);
+        transform: translate(0, 0rem);
         transition: .3s ease;
     }
 }
