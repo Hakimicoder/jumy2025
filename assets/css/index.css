@@ -33,7 +33,7 @@
     --small-dark: #131313;
     --leg-dark: #080707b4;
     --white: #FFF;
-    --small-white: #f0f0e593;
+    --small-white: #f0f0e5c0;
     --red: #F14248;
     --small-red: #f14248ad;
 }
@@ -43,7 +43,6 @@ html, body {
     font-size: 95%;
     background: var(--dark);
     position: relative;
-    cursor: url('../img/cursor.png'), auto;
 }
 
 /* main {
@@ -72,15 +71,13 @@ section {
 }
 
 h1,h2,h3,h4,h5,h6, ul li {
-    cursor: url('../img/cursor.png'), auto;
-}
+cursor: pointer;}
 
 a, button {
-    cursor: url('../img/cursor.png'), auto;
-}
+cursor: pointer;}
 
 a:hover, button:hover, i:hover, .cart:hover  {
-    cursor: url('../img/hover.png'), auto;
+    cursor: pointer;
 }
 
 .active {
@@ -132,7 +129,7 @@ p {
 
 a {
     color: inherit;
-    cursor: url('../img/cursor.png'), auto;
+    cursor: pointer;
 }
 
 i {
@@ -219,7 +216,6 @@ header {
     background: var(--white);
     color: var(--red) !important;
     transition: .3s ease-in-out;
-    cursor: url('../img/ahover.png'), auto;
     transform: translate(0, -.3rem);
 }
 
@@ -358,6 +354,10 @@ header a {
     display: grid;
     place-items: center;
     height: 100vh;
+}
+
+.banner::-webkit-scrollbar {
+    display: none;
 }
 
 .banner .container .bloc {
