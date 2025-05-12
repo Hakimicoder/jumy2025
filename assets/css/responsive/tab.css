@@ -29,7 +29,19 @@
     --small-dark: #131313;
     --leg-dark: #080707b4;
     --white: #FFF;
-    --small-white: #f0f0e593;
+    --small-white: #ffffffe3;
+    --red: #F14248;
+    --small-red: #f14248ad;
+}
+
+/* theme */
+[data-theme="light"] {
+    --dark: #fff;
+    --second-dark: #ffffffdd;
+    --small-dark: #f6f1f1;
+    --leg-dark: #f5f5f5;
+    --white: #000;
+    --small-white: #1e1e1deb;
     --red: #F14248;
     --small-red: #f14248ad;
 }

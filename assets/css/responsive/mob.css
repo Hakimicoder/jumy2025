@@ -30,11 +30,22 @@
     --small-dark: #131313;
     --leg-dark: #080707b4;
     --white: #FFF;
-    --small-white: #f0f0e593;
+    --small-white: #ffffffe3;
     --red: #F14248;
     --small-red: #f14248ad;
 }
 
+/* theme */
+[data-theme="light"] {
+    --dark: #fff;
+    --second-dark: #ffffffdd;
+    --small-dark: #f6f1f1;
+    --leg-dark: #f5f5f5;
+    --white: #000;
+    --small-white: #1e1e1deb;
+    --red: #F14248;
+    --small-red: #f14248ad;
+}
 
 /* @media screen and (max-width:1000px) {
     h2 {
@@ -55,9 +66,21 @@
         outline: none;
     }
 
-        .skills-grid .cart:nth-of-type(3) span {
-            word-break: break-all;
-        }
+    /* theme btn */
+    .mode {
+        position: absolute;
+        top: 41%;
+        left: 90%;
+        margin-left: -0.3rem;
+        transform: translate(-50%, -50%);
+    }
+
+    .skills-grid {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        overflow-x: scroll;
+    }
 
     section,
     footer,
@@ -95,7 +118,7 @@
     }
 
     header {
-        padding: 1.4rem .8rem;
+        padding: .5rem .8rem;
         position: fixed;
         width: 100%;
     }
@@ -405,7 +428,7 @@
     .cart i {
         font-size: 1.5rem;
     }
-    
+
     .cart h4 {
         color: var(--red);
         font-size: 1.3rem;
@@ -413,11 +436,10 @@
         text-transform: capitalize;
     }
 
-     /* skills */
-    
-    .skills-grid .cart {
+    /* skills */
+
+    .skills .cart {
         gap: 1rem;
-        flex-direction: column;
     }
 
     .cart {

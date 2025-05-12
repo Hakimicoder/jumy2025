@@ -38,7 +38,43 @@
     --small-red: #f14248ad;
 }
 
-html, body {
+/* theme */
+[data-theme="light"] {
+    --dark: #fff;
+    --second-dark: #ffffffdd;
+    --small-dark: #f6f1f1;
+    --leg-dark: #f5f5f5;
+    --white: #000;
+    --small-white: #1e1e1deb;
+    --red: #F14248;
+    --small-red: #f14248ad;
+}
+
+/* theme btn */
+.mode {
+    position: absolute;
+    top: 41%;
+    left: 93.9%;
+    transform: translate(-50%, -50%);
+}
+
+.mode button {
+    color: #FFF;
+    font-size: .7rem;
+    padding: .5rem !important;
+    background: var(--red) !important;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+header button {
+    background: transparent !important;
+    padding: 0px !important;
+}
+
+html,
+body {
     scroll-behavior: smooth;
     font-size: 95%;
     background: var(--dark);
@@ -70,13 +106,25 @@ section {
     display: none;
 }
 
-h1,h2,h3,h4,h5,h6, ul li {
-cursor: pointer;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul li {
+    cursor: pointer;
+}
 
-a, button {
-cursor: pointer;}
+a,
+button {
+    cursor: pointer;
+}
 
-a:hover, button:hover, i:hover, .cart:hover  {
+a:hover,
+button:hover,
+i:hover,
+.cart:hover {
     cursor: pointer;
 }
 
@@ -85,11 +133,17 @@ a:hover, button:hover, i:hover, .cart:hover  {
 }
 
 .two {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 
-h1,h2,h3,h4,h5,h6, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
 }
@@ -142,7 +196,7 @@ i {
 
 .spinner {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     background: var(--dark);
     position: fixed;
     top: 0;
@@ -152,7 +206,7 @@ i {
     z-index: 1000;
     aspect-ratio: 1;
     transition: 0s ease-in 0.9s;
-    display: none;
+    /* display: none; */
 }
 
 .spinner-bloc {
@@ -172,7 +226,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.4rem 8rem;
+    padding: .3rem 8rem;
     background: var(--dark);
     position: fixed;
     width: 100%;
@@ -244,7 +298,8 @@ section {
     color: var(--red);
 }
 
-#menu, #labmenu {
+#menu,
+#labmenu {
     display: none;
 }
 
@@ -264,20 +319,20 @@ header a {
     color: inherit;
 }
 
-.logo .logo-text {
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    background: -webkit-linear-gradient(305deg, #F14248 30%, var(--white), white);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-    /* line-height: 1.5rem; */
+.logo {
+    width: 3.5rem;
+    height: 3.5rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: .5rem;
 }
 
-.logo .logo-text:hover {
-    color: var(--red);
-    transition: .3s ease-in-out;
+.logo img {
+    width: 85%;
+    height: 85%;
+    margin: auto;
+    object-fit: contain;
+    aspect-ratio: 16.9;
 }
 
 .nav-links ul {
@@ -298,6 +353,7 @@ header a {
     transform: translate(0, -.5rem);
     transition: .3s ease-in-out;
 }
+
 .nav-links ul li:focus,
 .nav-links ul li:active {
     color: var(--red);
@@ -307,7 +363,7 @@ header a {
     cursor: pointer;
 }
 
-.menu:hover .menu-links{
+.menu:hover .menu-links {
     display: block;
     color: var(--white);
 }
@@ -389,6 +445,7 @@ header a {
     background: var(--dark);
     border-left: .2rem solid var(--white);
     animation: h2One 4s steps(14) infinite, h2Two 4s infinite;
+    /* animation: h2One 4s steps(14) infinite, h2Two 4s infinite; */
 }
 
 .twob {
@@ -432,7 +489,8 @@ footer .social-icon ul li i:hover {
     margin-top: 1rem;
 }
 
-.banner-text, .banner-img {
+.banner-text,
+.banner-img {
     width: 50%;
 }
 
@@ -452,14 +510,14 @@ footer .social-icon ul li i:hover {
 }
 
 .banner-img img {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .banner-img img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: .3s ease-in-out;
 }
 
@@ -494,8 +552,17 @@ footer .social-icon ul li i:hover {
 .pat img {
     width: 4rem;
     height: 4rem;
+    /* border: 3px solid var(--red); */
     border-radius: 50%;
     object-fit: cover;
+}
+
+.digiagency img {
+    width: 17rem;
+    height: 4rem;
+    border-radius: 0px !important;
+    object-fit: cover;
+    aspect-ratio: 16.9;
 }
 
 
@@ -526,13 +593,16 @@ footer .social-icon ul li i:hover {
     width: 55%;
     height: 35rem;
     background: transparent;
+    aspect-ratio: 16.9;
     border-radius: 1rem;
 }
 
 .about-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    aspect-ratio: 16.9;
+    animation: AboutIm 3s ease infinite;
+    transition: .3s ease;
 }
 
 .about-img img:hover {
@@ -599,23 +669,40 @@ footer .social-icon ul li i:hover {
 .skills {
     background: var(--leg-dark);
 }
-.skills-grid {
+
+/* .skills-grid {
     margin-top: 2.5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+} */
+.skills-grid {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.skills-grid .mark {
+    display: flex;
+    align-items: center;
     gap: 1.5rem;
 }
 
 .skills-grid .cart {
     display: flex;
     align-items: center;
-    padding: 1.5rem .8rem;
+    justify-content: center;
+    padding: 1.3rem 1.8rem;
     gap: 1rem;
+}
+
+.skills-grid::-webkit-scrollbar {
+    display: none;
 }
 
 .skills-grid .cart i {
     margin: 0rem;
-    font-size: 2.8rem
+    font-size: 1.5rem
 }
 
 .skills .skills-span {
@@ -623,6 +710,12 @@ footer .social-icon ul li i:hover {
     font-weight: 600;
     text-align: center;
     width: auto;
+}
+
+.skills .skills-span .xd {
+    width: .1rem;
+    height: .1rem;
+    margin: 0rem .1rem;
 }
 
 .skills .skills-span b {
@@ -655,7 +748,7 @@ footer .social-icon ul li i:hover {
 
 .portfolio h4 {
     text-transform: uppercase;
-} 
+}
 
 .portfolio .cart {
     background: var(--small-dark);
@@ -1006,8 +1099,8 @@ footer p a {
 
 
 
- /* back to top start here */
- 
+/* back to top start here */
+
 .to-top {
     /* background: green; */
     position: fixed;
@@ -1022,7 +1115,7 @@ footer p a {
     flex-direction: column;
     text-align: right;
     padding: 1rem;
-    height: 10vh;
+    height: 10dvh;
 }
 
 .top-a {
@@ -1046,4 +1139,4 @@ footer p a {
     transform: rotate(-90deg);
 }
 
- /* back to top finish here */
+/* back to top finish here */
