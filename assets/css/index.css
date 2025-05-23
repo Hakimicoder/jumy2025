@@ -8,7 +8,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url('./animation/animate.css');
-@import url('./contact.css');
 
 * {
     padding: 0;
@@ -84,11 +83,10 @@ body {
 }
 
 body {
-            background-color: #0000005b;
-            background-image:
-                radial-gradient(at 47% 33%, hsla(358, 86%, 60%, 0.519) 0, transparent 59%),
-                radial-gradient(at 82% 65%, hsla(0, 0%, 0%, 0.512) 0, transparent 55%);
-             }
+    background-image:
+    radial-gradient(at 47% 33%, hsla(358, 86%, 60%, 0.519) 0, transparent 59%),
+    radial-gradient(at 82% 65%, hsla(0, 0%, 0%, 0.512) 0, transparent 55%);
+}
 
 section {
     padding: 4rem 8rem;
@@ -445,7 +443,12 @@ header a {
 .social-icon ul {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: 1rem;
+    margin-top: 1.7rem;
+}
+
+.social-icon i {
+    color: var(--red);
     margin-top: 1.7rem;
 }
 
@@ -456,13 +459,6 @@ header a {
 
 .left-end {
     transform: rotate(90deg);
-}
-
-.social-icon ul li i {
-    color: inherit;
-    border: .1rem solid transparent;
-    padding: .7rem;
-    overflow: hidden;
 }
 
 .social-icon ul li i:hover,
@@ -551,11 +547,16 @@ footer .social-icon ul li i:hover {
 /* about end */
 
 /* services start */
-.about-grid {
+.service-grid {
     margin-top: 2.5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
+}
+
+.service .icon {
+    font-size: 3rem;
+    color: var(--red);
 }
 
 .cart {
@@ -916,7 +917,7 @@ button:hover {
 
 /* footer start */
 footer {
-    padding: .5rem 8rem;
+    padding: .9rem 8rem;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.75);
@@ -928,6 +929,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer ul {
+    margin-top: .7rem;
 }
 
 footer p a {
@@ -968,7 +973,7 @@ footer p a {
     background: var(--small-red);
 }
 
-.to-top i {
+.to-top .icon {
     transform: rotate(-90deg);
 }
 
