@@ -83,6 +83,13 @@ body {
     position: relative;
 }
 
+body {
+            background-color: #0000005b;
+            background-image:
+                radial-gradient(at 47% 33%, hsla(358, 86%, 60%, 0.519) 0, transparent 59%),
+                radial-gradient(at 82% 65%, hsla(0, 0%, 0%, 0.512) 0, transparent 55%);
+             }
+
 section {
     padding: 4rem 8rem;
     overflow-x: hidden;
