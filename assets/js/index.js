@@ -1,21 +1,21 @@
 // Theme dark/clair et changement du logo selon le theme
 
-const themeToggle = document.getElementById("theme-color");
+// const themeToggle = document.getElementById("theme-color");
 
-const currentTheme = localStorage.getItem("theme") || "dark";
-document.documentElement.setAttribute("data-theme", currentTheme);
-themeToggle.textContent = currentTheme === "light" ? "🌔" : "🌞";
+// const currentTheme = localStorage.getItem("theme") || "dark";
+// document.documentElement.setAttribute("data-theme", currentTheme);
+// themeToggle.textContent = currentTheme === "light" ? "🌔" : "🌞";
 
-// bascule
+// // bascule
 
-themeToggle.addEventListener("click", () => {
-    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
-    const newTheme = isDark ? "light" : "dark";
-    document.documentElement.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
-    themeToggle.textContent = newTheme === "light" ? "🌔" : "🌞";
-    // themeToggle.textContent = newTheme === "light" ? "🌞" : "☀";
-})
+// themeToggle.addEventListener("click", () => {
+//     const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+//     const newTheme = isDark ? "light" : "dark";
+//     document.documentElement.setAttribute("data-theme", newTheme);
+//     localStorage.setItem("theme", newTheme);
+//     themeToggle.textContent = newTheme === "light" ? "🌔" : "🌞";
+//     // themeToggle.textContent = newTheme === "light" ? "🌞" : "☀";
+// })
 
 
 // Spinner ( Chargement avant l'affichage du site )
