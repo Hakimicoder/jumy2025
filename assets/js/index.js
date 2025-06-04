@@ -29,29 +29,36 @@ function closeSpin() {
 };
 closeSpin();
 
+// Date automatique au niveau du footer 
+
+const firstDate = 2024;
+const actuDate = new Date().getFullYear();
+const textFooter = `© Copyright ${firstDate} - ${actuDate}`;
+const footerAuthor = document.getElementById('footerAuthor').textContent = `${textFooter}`;
+
 
 // Text replace ( changement de nom sur la banniere )
 
-var typingText = document.getElementById('oneb');
-var myTab = ["Jumael Kamga.", "HakimiCoder."];
-var arrayIndex = 1;
+// var typingText = document.getElementById('oneb');
+// var myTab = ["Jumael Kamga.", "HakimiCoder."];
+// var arrayIndex = 1;
 
-function textReplace() {
-    setInterval(timer, 2000);
-    function timer() {
-        if (arrayIndex < myTab.length) {
-            typingText.innerHTML = myTab[arrayIndex];
-            arrayIndex = arrayIndex + 1;
-        }
-        else {
-            arrayIndex = 0;
-            typingText.innerHTML = myTab[arrayIndex];
-            arrayIndex = arrayIndex + 1;
-        }
-    }
-}
+// function textReplace() {
+//     setInterval(timer, 2000);
+//     function timer() {
+//         if (arrayIndex < myTab.length) {
+//             typingText.innerHTML = myTab[arrayIndex];
+//             arrayIndex = arrayIndex + 1;
+//         }
+//         else {
+//             arrayIndex = 0;
+//             typingText.innerHTML = myTab[arrayIndex];
+//             arrayIndex = arrayIndex + 1;
+//         }
+//     }
+// }
 
-textReplace();
+// textReplace();
 
 
 
